@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UsersInformation" >
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="43dp"
+        android:src="@android:drawable/sym_def_app_icon" 
+        android:onClick="openMedia"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageButton1"
+        android:layout_below="@+id/imageButton1"
+        android:layout_marginTop="43dp"
+        android:text="Email Id"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/userEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignLeft="@+id/userName"
+        android:ems="10"
+        android:hint="Users&apos;s Email"
+        android:inputType="textEmailAddress"
+        android:maxLines="@integer/maxLines" >
+
+    </EditText>
+
+    <EditText
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView1"
+        android:layout_marginLeft="13dp"
+        android:layout_toRightOf="@+id/textView2"
+        android:ems="10"
+        android:hint="Name of User"
+        android:inputType="text"
+        android:maxLines="@integer/maxLines" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="33dp"
+        android:text="Add Locations"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignRight="@+id/userEmail"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/buttonselector"
+        android:src="@android:drawable/ic_input_add" 
+        android:onClick="onPlusButtonClick"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="19dp"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/firstScreenProfiles"
+            android:layout_width="match_parent"
+            android:layout_height="187dp"
+            android:layout_weight="0.96" >
+        </ListView>
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Done" 
+            android:onClick="userInformationCollected"/>
+    </LinearLayout>
+
+</RelativeLayout>

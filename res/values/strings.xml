@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Location Based Virtual Assistant</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_users_information">Users Information</string>
+    <string name="john_doe_gmail_com">john.doe@gmail.com</string>
+    <string name="title_activity_add_locations">AddLocations</string>
+    <string name="title_activity_list_reminders">ListReminders</string>
+    <string name="title_activity_add_reminder">AddReminder</string>
+    <string name="title_activity_list_friends">ListFriends</string>
+    <string name="title_activity_add_friends">AddFriends</string>
+    <string name="title_activity_appointment_list">AppointmentList</string>
+    <string name="title_activity_virtual_assistant">VirtualAssistant</string>
+    <string name="title_activity_appointment_details">AppointmentDetails</string>
+    <string name="title_activity_weather">Weather</string>
+    <string name="title_activity_alarm">Alarm</string>
+    <string name="title_activity_alarm_change">AlarmChange</string>
+    <string name="title_activity_profile_tab">ProfileTab</string>
+    <string name="title_activity_maps">Maps</string>
+
+</resources>

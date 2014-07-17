@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.locationbasedvirtualassistant"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <permission
+        android:name="com.example.locationbasedvirtualassistant.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.example.locationbasedvirtualassistant.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="16" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo" >
+        <uses-library android:name="com.google.android.maps" />
+        <activity
+            android:name="com.example.locationbasedvirtualassistant.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.locationbasedvirtualassistant.UsersInformation"
+            android:label="@string/title_activity_users_information" >
+        </activity>
+        <activity
+            android:name="com.example.locationbasedvirtualassistant.AddLocations"
+            android:label="@string/title_activity_add_locations" >
+        </activity>
+        <activity
+            android:name="com.example.locationbasedvirtualassistant.ListReminders"
+            android:label="@string/title_activity_list_reminders" >
+        </activity>
+        <activity
+            android:name="com.example.locationbasedvirtualassistant.AddReminder"
+            android:label="@string/title_activity_add_reminder" >
+        </activity>
+        <activity
+            android:name="com.example.locationbasedvirtualassistant.ListFriends"
+            android:label="@string/title_activity_list_friends" >
+        </activity>
+        <activity
+            android:name="com.example.locationbasedvirtualassistant.AddFriends"
+            android:label="@string/title_activity_add_friends" >
+        </activity>
+        <activity
+            android:name="com.example.locationbasedvirtualassistant.AppointmentList"
+            android:label="@string/title_activity_appointment_list" >
+        </activity>
+        <activity
+            android:name="com.example.locationbasedvirtualassistant.VirtualAssistant"
+            android:label="@string/title_activity_virtual_assistant" >
+        </activity>
+        <activity
+            android:name="com.example.locationbasedvirtualassistant.AppointmentDetails"
+            android:label="@string/title_activity_appointment_details" >
+        </activity>
+        <activity
+            android:name="com.example.locationbasedvirtualassistant.Weather"
+            android:label="@string/title_activity_weather" >
+        </activity>
+        <activity
+            android:name="com.example.locationbasedvirtualassistant.Alarm"
+            android:label="@string/title_activity_alarm" >
+        </activity>
+        <activity
+            android:name="com.example.locationbasedvirtualassistant.AlarmChange"
+            android:label="@string/title_activity_alarm_change" >
+        </activity>
+        <activity
+            android:name="com.example.locationbasedvirtualassistant.ProfileTab"
+            android:label="@string/title_activity_profile_tab" >
+        </activity>
+        <activity
+            android:name="com.example.locationbasedvirtualassistant.Maps"
+            android:label="@string/title_activity_maps" >
+        </activity>
+    </application>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>

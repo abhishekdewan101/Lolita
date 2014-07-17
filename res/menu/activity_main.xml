@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/addReminder"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Add Reminder"/>
+    <item
+        android:id="@+id/addProfiles"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Add Location"/>
+    <item
+        android:id="@+id/addFriends"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Add Friends"/>
+    <item
+        android:id="@+id/virtualAssistant"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Virtual Assistant"/>
+    <item
+        android:id="@+id/editprofiles"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="Profile Settings"/>
+
+</menu>
